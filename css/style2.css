@@ -1,0 +1,104 @@
+
+.side-right {
+	position: fixed;
+/* 	visibility:hidden; */
+	right: 0;
+	width:50%;
+	height:100vh;
+	color: #fff;
+	outline: 1px solid #fff;
+/* 	background: #97a3da url("img/1.jpg") repeat right top; */
+	border-left: 7px solid #47a3da;
+}
+
+.side-left {
+	position: relative;
+	top:20%;
+	text-align:center;
+	color: #47a3da;
+/* 	outline: 1px solid #47a3da; /* avoid gap */
+}
+
+.side-right h2 {
+	
+	bottom: 40%; 
+	left: 0; 
+	width: 100%;	
+}
+
+.side-right h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;  
+}
+
+.section-content-details {
+	/* display:none; */
+/* 	visibility:hidden; */
+	width: 100vw;
+	height: 0vh;
+	background-color:lightblue;
+	position:absolute;
+	z-index:300;
+	-webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+/* 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d; */
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	overflow:auto;
+}
+
+.snip1576 figcaption .section-title h2 {
+	font-size: 32px;
+    font-family: "catamaranregular",Arial,sans-serif;
+    color: #3fc1c0;
+    line-height: 1.2em;
+	margin: 10% 25px 15px;
+	text-align: left;
+}
+
+.snip1576 figcaption .section-quote {
+	font-size: 32px;
+    font-family: "catamaranregular",Arial,sans-serif;
+	color: #47a3da;
+}
+
+.snip1576 figcaption .section-content {
+	font-size: 16px;
+    font-family: "catamaranregular",Arial,sans-serif;
+	color: black;
+	padding: 50px;
+	justify-content: center;
+}
+
+@media (min-width: 900px) {
+	.button-next-section {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.button-next-section {
+		position: fixed;
+		bottom: 5px;
+		right: 5px;
+		z-index: 500;
+	}
+
+	.button-next-section > img {
+		width: 50px;
+		height: auto;
+	}
+}
